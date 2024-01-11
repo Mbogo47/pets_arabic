@@ -35,14 +35,15 @@ const ManageAds = () => {
                 color: "#000",
               }}
             >
-              Newest <FaAngleUp />
+              {t("newest")}
+              <FaAngleUp />
             </DropdownToggle>
             <DropdownMenu>
-              <DropdownItem>Last Week</DropdownItem>
-              <DropdownItem>Last Month</DropdownItem>
-              <DropdownItem>Last 3 Months</DropdownItem>
-              <DropdownItem>Last 6 Months</DropdownItem>
-              <DropdownItem>Last year</DropdownItem>
+              <DropdownItem>{t("last_7_days")}</DropdownItem>
+              <DropdownItem>{t("last_30_days")}</DropdownItem>
+              <DropdownItem>{t("last_3_months")}</DropdownItem>
+              <DropdownItem>{t("last_6_months")}</DropdownItem>
+              <DropdownItem>{t("last_year")}</DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </UncontrolledDropdown>
@@ -56,16 +57,16 @@ const ManageAds = () => {
                 color: "#000",
               }}
             >
-              Published
+              {t("published")}
               <FaAngleUp />
             </DropdownToggle>
             <DropdownMenu>
-              <DropdownItem>Published</DropdownItem>
-              <DropdownItem>Drafts</DropdownItem>
+              <DropdownItem>{ t("published")}</DropdownItem>
+              <DropdownItem>{t("drafts")}</DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </UncontrolledDropdown>
-        <button className="search-button">Filter</button>
+        <button className="search-button">{t("filter")}</button>
       </div>
       {/* <Section />
       <section className="section">
