@@ -64,7 +64,7 @@ const ManageAds = () => {
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem>{ t("published")}</DropdownItem>
-              <DropdownItem>{t("drafts")}</DropdownItem>
+              <DropdownItem>{t("draft")}</DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </UncontrolledDropdown>
