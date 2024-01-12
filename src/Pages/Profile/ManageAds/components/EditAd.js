@@ -131,7 +131,7 @@ const [mainImage, setMainImage] = useState(placeholderimg);
                     name="name"
                     style={{ border: " 1px solid #A6652C", color: "#fff" }}
                     required
-                    placeholder={("pet_name_label")}
+                    placeholder={t("pet_name_label")}
                   />
                 </div>
               </Col>
@@ -298,7 +298,7 @@ const [mainImage, setMainImage] = useState(placeholderimg);
                   {/* City */}
                   <div className="mb-4">
                     <Label htmlFor="city" className="form-label">
-                      {t("city_label*")}
+                      {t("city_label")}*
                     </Label>
                     <Input
                       type="text"
