@@ -87,8 +87,8 @@ const IntegratedNavbar = () => {
     <>
       <Navbar className="mobile-navbar">
         <div>
-          <span ref={countryFlagContainerRef}></span>
-          <span>{t("your_country")}</span>
+          <div ref={countryFlagContainerRef}></div>
+          
         </div>
         <div>
           <a href="/" className="navbar-brand">
