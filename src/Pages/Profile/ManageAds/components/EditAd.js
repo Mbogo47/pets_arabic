@@ -104,7 +104,7 @@ const [mainImage, setMainImage] = useState(placeholderimg);
                 className="bg-primary-subtle text-primary p-3"
                 style={{ backgroundColor: "#A6652C", color: "#fff" }}
               >
-                <h5 className="mb-0 fs-17">{t("Edit Ad!")}</h5>
+                <h5 className="mb-0 fs-17">{t("editad")}</h5>
               </div>
             </Col>
           </Row>
