@@ -275,7 +275,7 @@ const Chat = () => {
             </li>
             <li className="bg-white mb-3">
               <MDBTextArea
-                placeholder="Messages "
+                placeholder={t("messages")}
                 id="textAreaExample"
                 rows={4}
               />
