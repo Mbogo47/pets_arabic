@@ -5,6 +5,7 @@ import Section from "./components/Section";
 import Selected from "./components/Selected";
 import AdPreviewnotpaid from "../../PostYourAdd/components/AdPreviewnotpaid.js";
 import AdPreviewpaid from "../../PostYourAdd/components/AdPreviewpaid.js";
+import {useTranslation} from "react-i18next"
 import {
   UncontrolledDropdown,
   DropdownToggle,
@@ -21,6 +22,7 @@ const ManageAds = () => {
   const [dropdownOpen2, setDropdownOpen2] = useState(false);
   const toggle2 = () => setDropdownOpen2((prevState) => !prevState);
   document.title = "Manage Ads | Petshelpful";
+  const {t} = useTranslation();
   return (
     <React.Fragment>
       <p className="title">My Ads</p>
