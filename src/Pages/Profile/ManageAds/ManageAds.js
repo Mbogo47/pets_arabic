@@ -25,7 +25,7 @@ const ManageAds = () => {
   const {t} = useTranslation();
   return (
     <React.Fragment>
-      <p className="title">My Ads</p>
+      <p className="title">{t("my_ads")}</p>
       <div className="status">
         <UncontrolledDropdown className="me-2" direction="up">
           <Dropdown isOpen={dropdownOpen} toggle={toggle}>
