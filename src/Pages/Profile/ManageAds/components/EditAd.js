@@ -127,11 +127,11 @@ const [mainImage, setMainImage] = useState(placeholderimg);
                     type="text"
                     className="form-control"
                     id="jobtitle"
-                    placeholder="Name"
+
                     name="name"
                     style={{ border: " 1px solid #A6652C", color: "#fff" }}
                     required
-{t("pet_name_label")}
+                    placeholder={("pet_name_label")}
                   />
                 </div>
               </Col>
