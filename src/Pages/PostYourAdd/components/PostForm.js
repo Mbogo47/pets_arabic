@@ -502,7 +502,7 @@ const PostForm = () => {
                       }}
                       className="primary-btn"
                     >
-                      {t("Viewads")}
+                      {t("viewads")}
                     </button>
                   </ModalFooter>
                 </Modal>
