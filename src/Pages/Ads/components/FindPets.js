@@ -245,20 +245,20 @@ const FindPets = () => {
                     <FaAngleUp />
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem>{t("dog")}</DropdownItem>
-                    <DropdownItem>{t("Sheep")}</DropdownItem>
-                    <DropdownItem>{t("Goat")}</DropdownItem>
-                    <DropdownItem>{t("Parrot")}</DropdownItem>
-                    <DropdownItem>{t("cat")}</DropdownItem>
-                    <DropdownItem>{t("chicken")}</DropdownItem>
-                    <DropdownItem>{t("horse")}</DropdownItem>
-                    <DropdownItem>{t("cow")}</DropdownItem>
-                    <DropdownItem>{t("fishandturtle")}</DropdownItem>
-                    <DropdownItem>{t("rabbit")}</DropdownItem>
-                    <DropdownItem>{t("duck")}</DropdownItem>
-                    <DropdownItem>{t("squirrel")}</DropdownItem>
-                    <DropdownItem>{t("hamster")}</DropdownItem>
-                    <DropdownItem>{t("pigeon")}</DropdownItem>
+                 <DropdownItem>{t("dogs")}</DropdownItem>
+                  <DropdownItem>{t("sheep")}</DropdownItem>
+                  <DropdownItem>{t("goats")}</DropdownItem>
+                  <DropdownItem>{t("parrots")}</DropdownItem>
+                  <DropdownItem>{t("cats")}</DropdownItem>
+                  <DropdownItem>{t("chickens")}</DropdownItem>
+                  <DropdownItem>{t("horses")}</DropdownItem>
+                  <DropdownItem>{t("cows")}</DropdownItem>
+                  <DropdownItem>{t("fish_and_turtles")}</DropdownItem>
+                  <DropdownItem>{t("rabbits")}</DropdownItem>
+                  <DropdownItem>{t("ducks")}</DropdownItem>
+                  <DropdownItem>{t("squirrels")}</DropdownItem>
+                  <DropdownItem>{t("hamsters")}</DropdownItem>
+                  <DropdownItem>{t("pigeons")}</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
               </Dropdown>
@@ -270,13 +270,13 @@ const FindPets = () => {
                 <DropdownToggle className="dropdown-style">
                   {t("Typeofad")} <FaAngleUp />
                 </DropdownToggle>
-                <DropdownMenu>
+              <DropdownMenu>
                   <DropdownItem>{t("missing")}</DropdownItem>
-                  <DropdownItem>{t("temporaryAdoption")}</DropdownItem>
-                  <DropdownItem>{t("mating")}</DropdownItem>
-                  <DropdownItem>{t("rescue")}</DropdownItem>
-                  <DropdownItem>{t("sale")}</DropdownItem>
-                  <DropdownItem>{t("adoption")}</DropdownItem>
+                  <DropdownItem>{t("temporary_adoption_fee")}</DropdownItem>
+                  <DropdownItem>{t("marriage_fee")}</DropdownItem>
+                  <DropdownItem>{t("free_rescue")}</DropdownItem>
+                  <DropdownItem>{t("sale_fee")}</DropdownItem>
+                  <DropdownItem>{t("adoption_fee")}</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Dropdown>
