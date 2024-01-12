@@ -131,6 +131,7 @@ const [mainImage, setMainImage] = useState(placeholderimg);
                     name="name"
                     style={{ border: " 1px solid #A6652C", color: "#fff" }}
                     required
+{t("pet_name_label")}
                   />
                 </div>
               </Col>
@@ -269,7 +270,7 @@ const [mainImage, setMainImage] = useState(placeholderimg);
                 <Col lg={4}>
                   {/* Other Image 1 */}
                   <ImageUpload
-                    label={t("otherImage")}
+                    label={t("otherImages")}
                     onChange={(files) => handleImageChange(files, setMainImage)}
                     previewImage={mainImage}
                   />
@@ -278,7 +279,7 @@ const [mainImage, setMainImage] = useState(placeholderimg);
                 <Col lg={4}>
                   {/* Other Image 2 */}
                   <ImageUpload
-                    label={t("otherImage")}
+                    label={t("otherImages")}
                     onChange={(files) => handleImageChange(files, setMainImage)}
                     previewImage={mainImage}
                   />
@@ -287,7 +288,7 @@ const [mainImage, setMainImage] = useState(placeholderimg);
                 <Col lg={4}>
                   {/* Other Image 3 */}
                   <ImageUpload
-                    label={t("otherImage")}
+                    label={t("otherImages")}
                     onChange={(files) => handleImageChange(files, setMainImage)}
                     previewImage={mainImage}
                   />
@@ -314,7 +315,7 @@ const [mainImage, setMainImage] = useState(placeholderimg);
                   {/* Zip Code */}
                   <div className="mb-4">
                     <Label htmlFor="zipcode" className="form-label">
-                      {t("zipcode__label")}
+                      {t("zipcode_label")}
                     </Label>
                     <Input
                       type="text"
