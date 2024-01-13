@@ -147,7 +147,7 @@ const IntegratedNavbar = () => {
             <NavItem>
               <NavLink to="/signin"><button className="signin">{t("signin_button")}</button></NavLink>
             </NavItem>
-            </NavItem>
+            
             <NavItem>
               <NavLink href="/about">{t("about")}</NavLink>
             </NavItem>
