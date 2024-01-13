@@ -51,6 +51,8 @@ const AdPreviewnotpaid = () => {
       swiper.slideNext();
     }
   };
+const [model, setModel] = useState(false);
+  const openModel = () => setModel(!model);
 
   return (
     <div className="AdCard">
