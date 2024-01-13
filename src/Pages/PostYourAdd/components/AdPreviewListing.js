@@ -101,12 +101,12 @@ const AdPreview = () => {
 
           <div className="AdActions">
             <button className="ViewAdButton">{t("viewads")}</button>
-            // <button
-            //   className="EditButton"
-            //   style={{ background: "transparent", color: "#a6652c" }}
-            // >
-            //   {t("edit")}
-            // </button>
+            {/* <button
+  className="EditButton"
+  style={{ background: "transparent", color: "#a6652c" }}
+>
+  {t("edit")}
+</button> */}
           </div>
         </div>
       </div>
