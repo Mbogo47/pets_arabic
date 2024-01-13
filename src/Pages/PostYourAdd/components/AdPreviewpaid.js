@@ -9,10 +9,12 @@ import { useTranslation } from "react-i18next";
 // swiper css
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
-
+import { Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 
 const AdPreviewpaid = () => {
   const { t } = useTranslation();
+  const [modal, setModal] = useState(false);
+  const openModal = () => setModal(!modal);
   const [swiper, setSwiper] = useState(null);
 
   const adSwiper = [
@@ -113,12 +115,58 @@ const AdPreviewpaid = () => {
             Pay for Ad <FaMoneyBillWave />
           </button> */}
           <button className="DeleteButton">
-            <RiDeleteBin5Line />
+            <RiDeleteBin5Line onClick={openModal} />
           </button>
         </div>
+      </div>
+      <div className="modal-dialog modal-dialog-centered">
+        <Modal isOpen={modal} toggle={openModal} centered tabIndex="-1">
+          <ModalHeader
+            toggle={openModal}
+            style={{ border: "none", textAlign: "center" }}
+          ></ModalHeader>
+          <ModalBody style={{ textAlign: "center" }}>
+            {t("deletepaidadmessage")}
+          </ModalBody>
+          <ModalFooter
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              border: "none",
+            }}
+          >
+            <button
+              onClick={openModal}
+              style={{
+                color: "#000",
+                background: "#f5f5f5",
+                border: "none",
+                padding: "10px",
+                borderRadius: "10px",
+                margin: "0 10px 10px 10px",
+              }}
+            >
+              {t("cancel")}
+            </button>
+            <button
+              onclick={openModal}
+              style={{
+                color: "#fff",
+                background: "#A6652C",
+                border: "none",
+                padding: "10px",
+                borderRadius: "10px",
+                margin: "0 10px 10px 10px",
+              }}
+            >
+              {t("delete")}
+            </button>
+          </ModalFooter>
+        </Modal>
       </div>
     </div>
   );
 };
 
 export default AdPreviewpaid;
+
