@@ -67,6 +67,12 @@ const FindPets = () => {
   const handleSearch = () => {
     console.log("Filtered Pets:");
   };
+  const [price, setPrice] = useState(50);
+
+const handleSliderChange = (event) => {
+  const newValue = parseInt(event.target.value, 10);
+  setPrice(newValue);
+};
 
   return (
     <>
@@ -210,12 +216,16 @@ const FindPets = () => {
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem>
-                    <Input
-                      type="range"
-                      min="50"
-                      max="5000"
-                      className="slider"
-                    />
+                   <Input
+                          Input
+                          type="range"
+                          min="50"
+                          max="5000"
+                          className="slider"
+                          value={price}
+                          onChange={handleSliderChange}
+                          style={{ backgroundColor: "#8f4300" }}
+                        />
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -239,6 +249,24 @@ const FindPets = () => {
             </li>
             <li>
               <Dropdown isOpen={dropdown} toggle={toggle}>
+              <UncontrolledDropdown className="me-2" direction="up">
+                <DropdownToggle className="dropdown-style">
+                  {t("Typeofad")} <FaAngleUp />
+                </DropdownToggle>
+              <DropdownMenu>
+                  <DropdownItem>{t("missing")}</DropdownItem>
+                  <DropdownItem>{t("temporary_adoption_fee")}</DropdownItem>
+                  <DropdownItem>{t("marriage_fee")}</DropdownItem>
+                  <DropdownItem>{t("free_rescue")}</DropdownItem>
+                  <DropdownItem>{t("sale_fee")}</DropdownItem>
+                  <DropdownItem>{t("adoption_fee")}</DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            </Dropdown>
+            </li>
+          </ul>
+          <div>
+                     <Dropdown isOpen={dropdown} toggle={toggle}>
                 <UncontrolledDropdown className="me-2" direction="up">
                   <DropdownToggle className="dropdown-style">
                     {t("pettype")}
@@ -262,24 +290,7 @@ const FindPets = () => {
                   </DropdownMenu>
                 </UncontrolledDropdown>
               </Dropdown>
-            </li>
-          </ul>
-          <div>
-            <Dropdown isOpen={dropdown} toggle={toggle}>
-              <UncontrolledDropdown className="me-2" direction="up">
-                <DropdownToggle className="dropdown-style">
-                  {t("Typeofad")} <FaAngleUp />
-                </DropdownToggle>
-              <DropdownMenu>
-                  <DropdownItem>{t("missing")}</DropdownItem>
-                  <DropdownItem>{t("temporary_adoption_fee")}</DropdownItem>
-                  <DropdownItem>{t("marriage_fee")}</DropdownItem>
-                  <DropdownItem>{t("free_rescue")}</DropdownItem>
-                  <DropdownItem>{t("sale_fee")}</DropdownItem>
-                  <DropdownItem>{t("adoption_fee")}</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </Dropdown>
+            
           </div>
         </div>
       </div>
